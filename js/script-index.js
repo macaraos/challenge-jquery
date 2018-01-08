@@ -3,9 +3,16 @@ $(document).ready( function(){
     //La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
     renderHighlightedRecipes(recipesArray);
 
+//ETAPA 1
 $('.js-back').hide();
 
+printNews();
 });
+
+//ETAPA 2
+function printNews(){
+	$("#p1").append("NUEVAS RECETAS");
+};
 
 /*
 * Función que se encarga de pintar TODAS las recetas que tengan 
@@ -42,5 +49,4 @@ function renderActivities(activitiesArray) {
 function renderActivity(recipe) {
 	
 }
-
 
