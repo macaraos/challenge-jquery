@@ -19,8 +19,15 @@ function printNews(){
 * marcado el atributo "highlighted" como TRUE
 */
 function renderHighlightedRecipes(recipesArray) {
-	console.log('Recipes: ', recipesArray);
-}
+	console.log("recipes:", recipesArray);
+	for(var i in recipesArray){
+		if(recipesArray[i]["highlighted"] === true){
+			renderRecipe();
+		}
+	}
+};
+
+
 
 /*
 * Función que se encarga de pintar UNA recetas que tenga 
